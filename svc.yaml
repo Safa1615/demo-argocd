@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: first-service
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80 # the port on which the service is listening to connections 
+      targetPort: 80 # is the port on which your container is listening to connections 
